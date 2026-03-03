@@ -1,47 +1,61 @@
-<p><!DOCTYPE html><br>
-<html lang="ru"><br>
-<head><br>
- <meta charset="UTF-8"><br>
- <meta name="viewport" content="width=device-width, initial-scale=1.0"><br>
- <title>Курс - Дизайнер полиграфии с 0</title><br>
- <style><br>
- body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f5f5f5; }<br>
- header { background:#fff; padding:20px; display:flex; align-items:center; box-shadow:0 2px 5px rgba(0,0,0,0.1);}<br>
- header img { height:60px; margin-right:20px;}<br>
- header h1 { font-size:24px; margin:0;}<br>
- main { padding:40px;}<br>
- a { color:#0077cc; text-decoration:none;}<br>
- form { margin-top:30px; display:flex; flex-direction:column; max-width:400px;}<br>
- input { margin-bottom:15px; padding:10px; font-size:16px;}<br>
- button { padding:10px; font-size:16px; background:#0077cc; color:#fff; border:none; cursor:pointer;}<br>
- button:hover { background:#005fa3;}<br>
- </style><br>
-</head><br>
-<body><br>
- <header><br>
- <img src="images/logo.png" alt="Логотип"><br>
- <h1>Курс - Дизайнер полиграфии с 0</h1><br>
- </header><br>
- <main><br>
- <h2>Добро пожаловать!</h2><br>
- <p>Освой востребованную профессию и начни зарабатывать на дизайне сразу после обучения.</p></p>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Курс - Дизайнер полиграфии с 0</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f0f4f8; color:#333; }
+    header { background:#fff; padding:20px; box-shadow:0 2px 8px rgba(0,0,0,0.1); text-align:center;}
+    header h1 { font-size:15px; margin:0; color:#111113cc;}
+    header h2 { font-size:20px; margin:0; color:#0077cc;}
+    main { padding:40px; max-width:900px; margin:auto;}
+    a { color:#0077cc; text-decoration:none;}
+    h2,h3 { color:#0077cc; }
+    ul { list-style:none; padding:0; }
+    ul li { margin-bottom:10px; }
+    form { display:flex; flex-direction:column; max-width:400px; margin-top:30px; }
+    input { margin-bottom:15px; padding:12px; font-size:16px; border:1px solid #ccc; border-radius:4px; }
+    button { padding:12px 20px; font-size:16px; background:#0077cc; color:#fff; border:none; border-radius:6px; cursor:pointer; transition:background 0.3s; }
+    button:hover { background:#005fa3; }
+    footer { text-align:center; padding:20px; color:#666; font-size:14px; }
+  </style>
+</head>
+<body>
 
-<p> <h3>Документы курса:</h3><br>
- <ul><br>
- <li><a href="docs/oferta.pdf" target="_blank">Договор оферты</a></li><br>
- <li><a href="docs/personalnyedannie.pdf" target="_blank">Персональные данные</a></li><br>
- <li><a href="docs/pravila.pdf" target="_blank">Правила внутреннего распорядка</a></li><br>
- <li><a href="docs/program.pdf" target="_blank">Программа курса</a></li><br>
- <li><a href="docs/svidetelstvo.pdf" target="_blank">Свидетельство о регистрации</a></li><br>
- </ul></p>
+  <header>
+    <h1>Vladi Design & Education</h1>
+    <header>
+    <h2>Курс - Дизайнер полиграфии с 0</h2>
+  </header>
+  <main>
+    <h2>Ты уже на сайте регистрации, значит - первый шаг сделан! </h2>
+    <p>Еще немного и можно забыть о ранних подьемах и работе по графику! Освой востребованную профессию и начни зарабатывать на дизайне сразу после обучения.  
+      
+      Оставляй заявку на курс и мы свяжемся с вами в течение суток!</p>
 
-<p> <h3>Записаться на курс:</h3><br>
- <form action="https://formspree.io/f/mbdavqyo" method="POST"><br>
- <input type="text" name="fio" placeholder="ФИО" required><br>
- <input type="tel" name="phone" placeholder="Номер телефона" required><br>
- <input type="text" name="social" placeholder="Ваш ник в социальной сети" required><br>
- <button type="submit">Отправить</button><br>
- </form><br>
- </main><br>
-</body><br>
-</html></p>
+              <h3>Программа курса :</h3>
+      <li><a href="docs/program.pdf" target="_blank">Программа курса</a></li>
+    <h3>Документы курса :</h3>
+    <ul>
+      <li><a href="docs/oferta.pdf" target="_blank">Договор оферты</a></li>
+      <li><a href="docs/personalnyedannie.pdf" target="_blank">Персональные данные</a></li>
+      <li><a href="docs/pravila.pdf" target="_blank">Правила внутреннего распорядка</a></li>
+            <li><a href="docs/svidetelstvo.pdf" target="_blank">Свидетельство о регистрации</a></li>
+
+
+    </ul>
+
+    <h3>Записаться на курс:</h3>
+    <form action="https://formspree.io/f/mbdavqyo" method="POST">
+      <input type="text" name="fio" placeholder="ФИО" required>
+      <input type="tel" name="phone" placeholder="Номер телефона" required>
+      <input type="text" name="social" placeholder="Ваш ник в социальной сети" required>
+      <button type="submit">Отправить</button>
+    </form>
+  </main>
+  <footer>
+    © 2026 VladiEducation
+  </footer>
+</body>
+</html>
