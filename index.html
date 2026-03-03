@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс по дизайну – VladEducation</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f9f9f9; color: #333; }
+        header { text-align: center; margin-bottom: 40px; }
+        h1, h2 { color: #2c3e50; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin: 10px 0; }
+        a { color: #2980b9; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        form { display: flex; flex-direction: column; max-width: 400px; margin: 20px auto; }
+        input { padding: 10px; margin: 5px 0; font-size: 16px; }
+        button { padding: 10px; background-color: #2980b9; color: white; border: none; font-size: 16px; cursor: pointer; }
+        button:hover { background-color: #1f618d; }
+        section { margin-bottom: 50px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="images/logo.png" alt="Логотип курса" style="max-width:200px;">
+    <h1>Курс по дизайну – VladEducation</h1>
+</header>
+
+<section id="documents">
+    <h2>Документы курса</h2>
+    <ul>
+        <li><a href="docs/program.pdf" target="_blank">Программа курса</a></li>
+        <li><a href="docs/pravila.pdf" target="_blank">Правила внутреннего распорядка</a></li>
+        <li><a href="docs/personalnyedannie.pdf" target="_blank">Политика обработки персональных данных</a></li>
+        <li><a href="docs/oferta.pdf" target="_blank">Договор оферты</a></li>
+        <li><a href="docs/svidetelstvo.pdf" target="_blank">Свидетельство о регистрации ИП</a></li>
+    </ul>
+</section>
+
+<section id="application">
+    <h2>Оставьте заявку на курс</h2>
+    <form action="https://formspree.io/f/mbdavqyo" method="POST">
+        <input type="text" name="name" placeholder="ФИО" required>
+        <input type="tel" name="phone" placeholder="Мобильный" required>
+        <button type="submit">Отправить заявку</button>
+    </form>
+</section>
+
+</body>
+</html>
