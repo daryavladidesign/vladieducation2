@@ -1,61 +1,262 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Курс - Дизайнер полиграфии с 0</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f0f4f8; color:#333; }
-    header { background:#fff; padding:20px; box-shadow:0 2px 8px rgba(0,0,0,0.1); text-align:center;}
-    header h1 { font-size:15px; margin:0; color:#111113cc;}
-    header h2 { font-size:20px; margin:0; color:#0077cc;}
-    main { padding:40px; max-width:900px; margin:auto;}
-    a { color:#0077cc; text-decoration:none;}
-    h2,h3 { color:#0077cc; }
-    ul { list-style:none; padding:0; }
-    ul li { margin-bottom:10px; }
-    form { display:flex; flex-direction:column; max-width:400px; margin-top:30px; }
-    input { margin-bottom:15px; padding:12px; font-size:16px; border:1px solid #ccc; border-radius:4px; }
-    button { padding:12px 20px; font-size:16px; background:#0077cc; color:#fff; border:none; border-radius:6px; cursor:pointer; transition:background 0.3s; }
-    button:hover { background:#005fa3; }
-    footer { text-align:center; padding:20px; color:#666; font-size:14px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Курс - Дизайнер полиграфии с 0</title>
+
+<style>
+body{
+  margin:0;
+  font-family:'Segoe UI', sans-serif;
+  background:linear-gradient(135deg,#eef2f7,#ffffff);
+  color:#222;
+}
+
+header{
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  padding:80px 20px;
+  text-align:center;
+  color:white;
+}
+
+header h1{
+  margin:0;
+  font-size:14px;
+  letter-spacing:3px;
+  opacity:0.8;
+}
+
+header h2{
+  margin-top:20px;
+  font-size:36px;
+  font-weight:600;
+}
+
+main{
+  max-width:1100px;
+  margin:auto;
+  padding:70px 20px;
+  text-align:center;
+}
+
+h2{
+  font-size:30px;
+}
+
+h3{
+  margin-top:70px;
+  font-size:26px;
+  color:#2c5364;
+}
+
+p{
+  font-size:18px;
+  line-height:1.7;
+  max-width:850px;
+  margin:20px auto;
+}
+
+.benefits{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+  margin-top:40px;
+}
+
+.card{
+  background:white;
+  padding:35px;
+  border-radius:18px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+}
+
+.price-box{
+  margin-top:60px;
+  padding:50px;
+  background:white;
+  border-radius:20px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.08);
+}
+
+.price{
+  font-size:38px;
+  font-weight:bold;
+  margin-top:15px;
+  color:#2c5364;
+}
+
+.limited{
+  margin-top:15px;
+  font-size:18px;
+  color:#c0392b;
+  font-weight:bold;
+}
+
+ul{
+  list-style:none;
+  padding:0;
+}
+
+ul li{
+  margin-bottom:15px;
+}
+
+a{
+  color:#2c5364;
+  font-weight:600;
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+  max-width:450px;
+  margin:60px auto 0;
+}
+
+input{
+  padding:16px;
+  margin-bottom:18px;
+  border:1px solid #ddd;
+  border-radius:10px;
+  font-size:16px;
+}
+
+button{
+  padding:16px;
+  font-size:17px;
+  border:none;
+  border-radius:12px;
+  cursor:pointer;
+  background:linear-gradient(135deg,#2c5364,#203a43);
+  color:white;
+  transition:0.3s;
+}
+
+button:hover{
+  opacity:0.9;
+}
+
+.sticky-button{
+  position:fixed;
+  bottom:20px;
+  left:50%;
+  transform:translateX(-50%);
+  background:linear-gradient(135deg,#c0392b,#e74c3c);
+  color:white;
+  padding:16px 35px;
+  border-radius:50px;
+  font-size:16px;
+  text-decoration:none;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+  z-index:1000;
+  transition:0.3s;
+}
+
+.sticky-button:hover{
+  opacity:0.9;
+}
+
+footer{
+  margin-top:100px;
+  padding:30px;
+  text-align:center;
+  color:#777;
+  font-size:14px;
+}
+</style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Vladi Design & Education</h1>
-    <header>
-    <h2>Курс - Дизайнер полиграфии с 0</h2>
-  </header>
-  <main>
-    <h2>Ты уже на сайте регистрации, значит - первый шаг сделан! </h2>
-    <p>Еще немного и можно забыть о ранних подьемах и работе по графику! Освой востребованную профессию и начни зарабатывать на дизайне сразу после обучения.  
-      
-      Оставляй заявку на курс и мы свяжемся с вами в течение суток!</p>
+<header>
+  <h1>Vladi Design & Education</h1>
+  <h2>Курс - Дизайнер полиграфии с 0</h2>
+</header>
 
-              <h3>Программа курса :</h3>
-      <li><a href="docs/program.pdf" target="_blank">Программа курса</a></li>
-    <h3>Документы курса :</h3>
-    <ul>
-      <li><a href="docs/oferta.pdf" target="_blank">Договор оферты</a></li>
-      <li><a href="docs/personalnyedannie.pdf" target="_blank">Персональные данные</a></li>
-      <li><a href="docs/pravila.pdf" target="_blank">Правила внутреннего распорядка</a></li>
-            <li><a href="docs/svidetelstvo.pdf" target="_blank">Свидетельство о регистрации</a></li>
+<main>
 
+<h2>Ты уже на сайте регистрации — значит первый шаг сделан!</h2>
 
-    </ul>
+<p>
+Еще немного — и можно забыть о ранних подъемах и работе по графику.
+Освой востребованную профессию и начни зарабатывать на дизайне сразу после обучения.
+</p>
 
-    <h3>Записаться на курс:</h3>
-    <form action="https://formspree.io/f/mbdavqyo" method="POST">
-      <input type="text" name="fio" placeholder="ФИО" required>
-      <input type="tel" name="phone" placeholder="Номер телефона" required>
-      <input type="text" name="social" placeholder="Ваш ник в социальной сети" required>
-      <button type="submit">Отправить</button>
-    </form>
-  </main>
-  <footer>
-    © 2026 VladiEducation
-  </footer>
+<p>
+Оставляй заявку на курс — и мы свяжемся с вами в течение суток.
+</p>
+
+<h3>Что вы получите</h3>
+
+<div class="benefits">
+  <div class="card">
+    <h4>Полную систему обучения</h4>
+    <p>Пошаговая программа от основ дизайна до реальных заказов.</p>
+  </div>
+
+  <div class="card">
+    <h4>Практику на реальных проектах</h4>
+    <p>Создадите портфолио, которое можно сразу показывать клиентам.</p>
+  </div>
+
+  <div class="card">
+    <h4>Навыки заработка</h4>
+    <p>Поймете, где искать клиентов и как начать получать первые заказы.</p>
+  </div>
+
+  <div class="card">
+    <h4>Поддержку и сопровождение</h4>
+    <p>Обратная связь и помощь на всех этапах обучения.</p>
+  </div>
+</div>
+
+<div class="price-box">
+  <h3>Стоимость участия</h3>
+  <p>По предварительной регистрации</p>
+  <div class="price">320 BYN</div>
+  <div class="limited">Количество мест ограничено — осталось 7 мест</div>
+</div>
+
+<h3>Программа курса</h3>
+<ul>
+  <li><a href="docs/program.pdf" target="_blank">Скачать программу курса</a></li>
+</ul>
+
+<h3>Документы</h3>
+<ul>
+  <li><a href="docs/oferta.pdf" target="_blank">Договор оферты</a></li>
+  <li><a href="docs/personalnyedannie.pdf" target="_blank">Политика обработки персональных данных</a></li>
+  <li><a href="docs/pravila.pdf" target="_blank">Правила внутреннего распорядка</a></li>
+  <li><a href="docs/svidetelstvo.pdf" target="_blank">Свидетельство о регистрации</a></li>
+</ul>
+
+<h3 id="form">Записаться на курс</h3>
+
+<form action="https://formspree.io/f/mbdavqyo" method="POST">
+  <input type="text" name="fio" placeholder="ФИО" required>
+  <input type="tel" name="phone" placeholder="Номер телефона" required>
+  <input type="text" name="social" placeholder="Ваш ник в социальной сети" required>
+  <button type="submit">Отправить заявку</button>
+</form>
+
+</main>
+
+<a href="#form" class="sticky-button">Записаться на курс</a>
+
+<footer>
+© 2026 VladiEducation
+</footer>
+
 </body>
 </html>
